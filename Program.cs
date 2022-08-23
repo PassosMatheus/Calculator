@@ -8,7 +8,6 @@ namespace Calculator
         {
             Menu();
         }
-
         static void Menu()
         {
             Console.Clear();
@@ -17,6 +16,7 @@ namespace Calculator
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
             Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Sair");
 
             Console.WriteLine("---------------------");
             Console.Write("Selecione uma opção: ");
@@ -28,11 +28,11 @@ namespace Calculator
                 case 2: Subtracao(); break;
                 case 3: Multiplicacao(); break;
                 case 4: Divisao(); break;
+                case 5: System.Environment.Exit(0); break;
                 default: Menu(); break;
 
             }
         }
-
         static void Soma()
         {
             Console.Clear();
@@ -47,7 +47,6 @@ namespace Calculator
             Console.ReadKey();
             Menu();
         }
-
         static void Subtracao()
         {
             Console.Write("Primeiro valor: ");
@@ -61,7 +60,6 @@ namespace Calculator
             Console.ReadKey();
             Menu();
         }
-
         static void Multiplicacao()
         {
             Console.Write("Primeiro valor: ");
